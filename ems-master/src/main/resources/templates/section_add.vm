@@ -1,0 +1,59 @@
+#parse("Main.vm")
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div>
+            <h1 class="page-header">开设课程</h1>
+        </div>
+        <div class="panel-heading">
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        开设课程
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div class="dataTable_wrapper">
+                            <form action="/admin/addSection.do" method="post"
+                                  class="form-group">
+                                <label>课程名称</label>
+                                <select class="form-control" name="courseName">
+                                    #foreach($course in $courseLists)
+                                        <option>${course.name}</option>
+                                    #end
+                                </select>
+
+                                <label>授课老师</label>
+                                <select class="form-control" name="teacherId">
+                                    #foreach($teacher in $teacherLists)
+                                        <option value="${teacher.id}" name="teacherId">${teacher.name}</option>
+                                    #end
+                                </select>
+
+                                <label>可选课人数</label>
+                                <input class="form-control" name="limitCount">
+                                <label>开设时间</label>
+                                <select class="form-control" name="year">
+                                    #foreach($term in $termLists)
+                                        <option value="${term.val}">${term.text}</option>
+                                     #end
+                                </select>
+                                <label></label>
+                                <button type="submit"
+                                        class="btn btn-primary form-control">开设课程
+                                </button>
+                            </form>
+                        </div>
+                        <!-- /.table-responsive -->
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+    </div>
+</div>
+#parse("footer.vm")

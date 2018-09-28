@@ -1,0 +1,10 @@
+写个大纲吧,
+	4个角色:teacher,admin,student,supplier(供货商)
+	4个角色对应的权限基于shiro,颗粒度可粗可细,这个就不细说了
+	重点说下数据库吧:因为数据库搞的有点乱了
+		course_section:课程,哪些老师开设了哪些课程
+		stud_course:哪些学生选了哪些课程
+		人员表:
+			user,teacher,student
+			user是所有用户的集合,单独再列出teacher和student是为了方便总结,基本上的操作都是基于user这个表的..,就想到这了,明天继续(提醒下自己把这句话删了)
+	

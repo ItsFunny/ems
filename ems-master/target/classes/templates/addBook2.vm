@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+ 
+
+    <title>桂林电子科技大学教材订购系统</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css"
+          rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- custom CSS -->
+    <link href="/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- custom Fonts -->
+    <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you util the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="row">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <!--item-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <form method="post" action="/orderbook.do/add">
+                        <div id="panelContainer">
+                            <div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4">
+                                             #foreach($sections in $sectionLists)
+                                                        	${sections.courTitle}
+                                               #end
+                                                ##<select class="form-control" name="form1"style="font-size: 14px;">
+                                              ##          #foreach($sections in $sectionLists)
+                                              ##          	${sections.courTitle}
+                                              ## 			#end
+                                              ##  </select></div>
+                                                
+                                            <div class="col-lg-4 col-md-4"></div>
+                                            <div class="col-lg-4 col-md-4"></div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="dataTable_wrapper">
+                                            <table class="table table-hover table-responsive">
+                                                <thead>
+                                                <tr>
+                                                    <th>书名</th>
+                                                    <th>BookCode</th>
+                                                    <th>印刷日期</th>
+                                                    <th>作者</th>
+                                                    <th>出版社</th>
+                                                    <th>教材类别</th>
+                                                    <th>单价</th>
+                                                    <th>备注</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td class="col-md-2">
+                                                        <input type="text" class="form-control"
+                                                               name="form1">
+                                                    </td>
+                                                    <td class="col-md-3">
+                                                        <input type="text" class="form-control"
+                                                               name="form1">
+                                                    </td>
+                                                    <td class="col-md-1">
+                                                        <input type="text" class="form-control"
+                                                               name="form1">
+                                                    </td>
+                                                    <td class="col-md-1">
+                                                        <input type="text" class="form-control"
+                                                               name="form1">
+                                                    </td>
+                                                    <td class="col-md-2">
+                                                        <input type="text" class="form-control"
+                                                               name="form1">
+                                                    </td>
+                                                    <td class="col-md-1">
+                                                        <select class="form-control" name="form1"
+                                                                style="min-width: 60px">
+                                                            <option>A</option>
+                                                            <option>B</option>
+                                                            <option>C</option>
+                                                            <option>D</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="col-md-1">
+                                                        <input type="number" class="form-control"
+                                                               name="form1">
+                                                    </td>
+                                                    <td class="col-md-1">
+                                                        <input type="text" class="form-control"
+                                                               name="form1">
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <button type="button"
+                                                    class="btn btn-circle pull-right"
+                                                    onclick="addRow(this)"><i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-warning">提交
+                        </button>
+                        <button type="button" class="btn btn-primary pull-right" id="btn_alter"
+                                onclick="addCourse(this)">添加课程
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+#parse("footer.vm")

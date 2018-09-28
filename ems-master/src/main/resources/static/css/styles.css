@@ -1,0 +1,282 @@
+*{outline: none;padding: 0;margin: 0}
+body{margin: 0;font-family: "微软雅黑"; min-width: 1237px; background-color: #e8edf1}
+h1,h2,h3{margin: 0}
+ul,li{list-style: none;padding: 0;margin: 0}
+img{border:none; padding: 0; vertical-align: middle}
+.block{display: block}
+a{ text-decoration: none}
+.fl{ display: block; float: left}
+.fr{ display: block; float: right}
+.logo{}
+
+.w1200{ width: 1200px; margin: auto}
+.w1237{ width: 1237px; margin: auto}
+.page{ width:1237px; overflow: hidden; text-align: center; margin: auto; margin-bottom: 50px;}
+.page a{ display: inline-block}
+
+.top{ width: 100%; height: 70px; background-color: #1b1b1b; position: relative;}
+.top:after{ background-color: #1b1b1b; height: 2px; width: 100%; content: ' '; top: 72px; left: 0; position: absolute}
+.nav{ margin-left: 137px;}
+.nav li{ float: left; height: 70px; border-left: 1px solid #434343; border-right:1px solid #000000; width: 256px; position: relative; background-color: transparent; transition: 0.3s}
+.nav li:hover,.nav .active{ background-color: #2a2a2a}
+.nav li>a{ display: block; width: 100%; height: 70px; line-height: 70px; text-align: center; font-size: 16px; color: #fafafa}
+.nav li:hover .drop{ display: block}
+.drop{ position: absolute; top: 70px; padding-top: 2px; width: 100%; left: 0; display: none; z-index: 2 }
+.drop a{ display: block; height: 36px; line-height: 36px;; text-align: center; background-color: #1b1b1b; color:#fafafa;transition: 0.3s;
+background-repeat: no-repeat; background-position: 63px center; border-top: 1px solid #434343}
+.drop a:hover{ background-color: #313131}
+.drop-a1{ background-image: url(../images/top-useri1.png)}
+.drop-a2{ background-image: url(../images/top-useri2.png)}
+.drop-a3{ background-image: url(../images/top-useri3.png)}
+.in-title{ font-size: 24px; color: #333333; text-align: left; height: 100px; margin-top: 30px; width: 100%}
+.in-menu{ width: 1249px; overflow: hidden}
+.in-menu li{ width: 298px; height: 177px; float:left; margin-right: 12px; margin-bottom: 12px; border:1px solid #cfd6dc; border-radius: 4px; transition: 0.3s}
+.in-menu li a{ display: block; width: 100%; height: 100%; font-size: 18px; color: #364252; text-align: center}
+.in-menu li p{ width: 82px; height: 82px; margin: auto; display: block; background-image: url(../images/in-icon.png); margin-top: 22px; margin-bottom: 10px;
+    border-radius: 50%; transition: background-color 0.3s}
+.in-menu li:hover{ border: 1px solid #065aa2}
+.in-menu li div{ height:40px; line-height: 40px;}
+.in-menu1 p{ background-position: 0 0; }
+.in-menu1:hover p{ background-position: -82px 0; background-color: #065aa2}
+
+.in-menu2 p{ background-position: 0 -82px; }
+.in-menu2:hover p{ background-position: -82px -82px; background-color: #065aa2}
+
+.in-menu3 p{ background-position: 0 -164px; }
+.in-menu3:hover p{ background-position: -82px -164px; background-color: #065aa2}
+
+.in-menu4 p{ background-position: 0 -246px; }
+.in-menu4:hover p{ background-position: -82px -246px; background-color: #065aa2}
+
+.in-menu5 p{ background-position: 0 -328px; }
+.in-menu5:hover p{ background-position: -82px -328px; background-color: #065aa2}
+
+.in-menu6 p{ background-position: 0 -410px; }
+.in-menu6:hover p{ background-position: -82px -410px; background-color: #065aa2}
+
+.in-menu7 p{ background-position: 0 -492px; }
+.in-menu7:hover p{ background-position: -82px -492px; background-color: #065aa2}
+
+.in-menu8 p{ background-position: 0 -574px; }
+.in-menu8:hover p{ background-position: -82px -574px; background-color: #065aa2}
+
+.in-menu9 p{ background-position: 0 -656px; }
+.in-menu9:hover p{ background-position: -82px -656px; background-color: #065aa2}
+
+.in-menu10 p{ background-position: 0 -738px; }
+.in-menu10:hover p{ background-position: -82px -738px; background-color: #065aa2}
+
+.in-menu11 p{ background-position: 0 -820px; }
+.in-menu11:hover p{ background-position: -82px -820px; background-color: #065aa2}
+
+.in-menu12 p{ background-position: 0 -902px; }
+.in-menu12:hover p{ background-position: -82px -902px; background-color: #065aa2}
+
+.in-menu13 p{ background-position: 0 -984px; }
+.in-menu13:hover p{ background-position: -82px -984px; background-color: #065aa2}
+
+.in-menu14 p{ background-position: 0 -1066px; }
+.in-menu14:hover p{ background-position: -82px -1066px; background-color: #065aa2}
+.ny-title{ height: 66px; line-height: 66px; font-size: 18px;}
+.ny-title a{ color: #364252}
+.ny-title img{ position: relative; top: -3px}
+.mt4-menu{ width: 100%; height: 60px; line-height: 60px; }
+.mt4-menu li{ width: 14.28%; float: left; text-align: center; font-size: 0; transition: 0.3s; background-color: #065aa2; }
+
+.mt4-menu li a{ display: block; color: #fff; width: 100%; height: 60px;font-size: 16px;position: relative}
+.mt4-menu li:hover a:after,.mt4-menu .active a:after{ content:" "; position: absolute; left: 0; top: 0; width: 100%; height: 5px; background-color: #faa908 }
+.mt4-menu li a span{ display: inline-block; width: 28px; height: 28px; border-radius: 50%; background-color: #fff; vertical-align: middle;
+background-image: url(../images/nav1.png)}
+.mt4-menu li:hover,.mt4-menu .active{ background-color: #fff}
+.mt4-menu li:hover a,.mt4-menu .active a{ color: #364252}
+
+.mt4-menu .mt4-menu1:hover a span,.mt4-menu1.active a span{ background-position: -27px 0; background-color: #065aa2}
+
+.mt4-menu2 span{ background-position: 0 -27px;}
+.mt4-menu .mt4-menu2:hover a span,.mt4-menu2.active a span{ background-position: -27px -27px; background-color: #065aa2}
+
+.mt4-menu3 span{ background-position: 0 -54px;}
+.mt4-menu .mt4-menu3:hover a span,.mt4-menu3.active a span{ background-position: -27px -54px; background-color: #065aa2}
+
+.mt4-menu4 span{ background-position: 0 -81px;}
+.mt4-menu .mt4-menu4:hover a span,.mt4-menu4.active a span{ background-position: -27px -81px; background-color: #065aa2}
+
+.mt4-menu5 span{ background-position: 0 -108px;}
+.mt4-menu .mt4-menu5:hover a span,.mt4-menu5.active a span{ background-position: -27px -108px; background-color: #065aa2}
+
+.mt4-menu6 span{ background-position: 0 -135px;}
+.mt4-menu .mt4-menu6:hover a span,.mt4-menu6.active a span{ background-position: -27px -135px; background-color: #065aa2}
+
+.mt4-menu7 span{ background-position: 0 -162px;}
+.mt4-menu .mt4-menu7:hover a span,.mt4-menu7.active a span{ background-position: -27px -162px; background-color: #065aa2}
+
+.mt4-menu8 span{ background-position: 0 -196px;}
+.mt4-menu .mt4-menu8:hover a span,.mt4-menu8.active a span{ background-position: -27px -196px; background-color: #065aa2}
+
+.mt4-menu9 span{ background-position: 0 -224px;}
+.mt4-menu .mt4-menu9:hover a span,.mt4-menu9.active a span{ background-position: -27px -224px; background-color: #065aa2}
+
+.mt4-menu .mt4-menu8,.mt4-menu .mt4-menu9{ width: 50%}
+
+.mt4-menu10 span{ background-position: 0 -252px;}
+.mt4-menu .mt4-menu10:hover a span,.mt4-menu10.active a span{ background-position: -27px -252px; background-color: #065aa2}
+
+.mt4-menu11 span{ background-position: 0 -280px;}
+.mt4-menu .mt4-menu11:hover a span,.mt4-menu11.active a span{ background-position: -27px -280px; background-color: #065aa2}
+
+.mt4-menu12 span{ background-position: 0 -308px;}
+.mt4-menu .mt4-menu12:hover a span,.mt4-menu12.active a span{ background-position: -27px -308px; background-color: #065aa2}
+
+.mt4-menu13 span{ background-position: 0 -336px;}
+.mt4-menu .mt4-menu13:hover a span,.mt4-menu13.active a span{ background-position: -27px -336px; background-color: #065aa2}
+
+.mt4-menu14 span{ background-position: 0 -364px;}
+.mt4-menu .mt4-menu14:hover a span,.mt4-menu14.active a span{ background-position: -27px -364px; background-color: #065aa2}
+
+.mt4-menu15 span{ background-position: 0 -392px;}
+.mt4-menu .mt4-menu15:hover a span,.mt4-menu15.active a span{ background-position: -27px -392px; background-color: #065aa2}
+
+.mt4-content{ width: 100%; height: 100%; background-color: #fff; overflow: hidden; box-sizing: border-box; padding: 0 25px;}
+.mt4-tit{ height: 62px; line-height: 62px; font-size: 18px; color: #364761;font-weight: bold; position: relative; padding-left: 13px;}
+.mt4-tit:after{ position: absolute; content: ' '; width: 4px; height: 22px; left: 0; background-color: #1dbae3; top: 21px;}
+
+.khlb-menu li{ width: 50%}
+.input{ height: 33px; display: block; border:1px solid #d1d6d9; box-sizing: content-box}
+.mt4-chujin span{ display: block; text-align: center; width: 125px; font-size: 16px; line-height: 38px; float: left; color: #364252; }
+.mt4-chujin div{ clear: both; overflow: hidden; margin-bottom: 29px;}
+.activebox{ margin-top: 46px; padding-left: 125px}
+.activebox input{ width: 126px; height: 37px; border: none; background-color: #faa908; border-radius: 2px; transition: 0.3s; color: #fff; cursor: pointer;
+}
+.activebox input:hover,.kszhactivebox input:hover{ background-color: #e89a00}
+.mt4-content-bottom{ min-height: 90px; margin-top: 98px; width: 907px; padding-left: 270px; padding-bottom: 40px; background-image: url(../images/card.png); background-repeat: no-repeat; background-position: 131px top}
+
+.mt4-content-bottom>h1{ font-size: 24px; color: #364252; margin-bottom: 15px;}
+.mt4-content-bottom>div{ font-size: 16px; line-height: 24px; color: #364252}
+.line1{ width: 100%; height: 70px; line-height: 70px; background-image: url(../images/bg-line.png); background-repeat: no-repeat; background-position: center center}
+
+.mt4-table{ text-align: center; font-size: 16px; color: #333333; line-height: 40px;}
+.mt4-table tr td{ border: none; border-bottom: 2px solid #065aa2}
+.mt4-table tr{ background-color: #f6f6f6}
+.mt4-table tr:nth-child(2n){ background-color: #fff}
+.mt4-table a{ color: #065aa2}
+.mt4-table .title{ background-color: #065aa2; border: 1px solid #cadceb; color: #fff}
+
+.mt4-kszh{ width: 500px; margin: auto; margin-top: 60px;}
+.mt4-kszh li{ height: 35px; margin-bottom: 30px}
+.mt4-kszh li span{ display: block; float: left;line-height: 36px; font-size: 16px; color: #364252; width: 97px; text-align: right; margin-right: 15px}
+.mt4-kszh li .input{ width: 368px; padding: 0 5px; color: #535f6f}
+.kszhactivebox{ width: 100%; margin: 60px auto}
+.kszhactivebox input{ display: block; width:240px; height: 37px; border: none; background-color: #faa908; border-radius: 2px; transition: 0.3s; color: #fff; cursor: pointer;
+margin: auto}
+
+
+.cx-top{ height: 36px; margin-top: 65px; margin-bottom: 25px;}
+.cx-top span{ display: block; float: left; padding: 0 10px; line-height: 36px; font-size: 16px; text-align: center; color: #364252}
+.cx-top a{ width: 126px; height: 36px; border: none; background-color: #faa908; border-radius: 2px; transition: 0.3s; color: #fff; cursor: pointer;
+ text-align: center; line-height: 36px; margin-left: 17px;}
+.cx-top  .input{ font-size: 16px; color: #535f6f; padding: 0 14px}
+
+.dlrsq .input{ padding: 0 3px}
+.dlrsq .input,.dlrsq  span{ margin-bottom: 20px}
+.ny-title .back{ cursor: pointer}
+
+.menu-baobiao li{ width: 25%}
+.baobiao-top .input{ width: 130px; padding: 0 6px}
+.baobiao-top .t{ overflow: hidden; width: 100%; margin-bottom: 20px}
+.baobiao-top{ height: auto; overflow: hidden; margin-top: 25px}
+.dlr-row-title{ height: 52px;}
+.btns{ width: 52px; height: 52px; line-height: 52px; text-align: center; font-size: 0; cursor: pointer; transition: 0.3s}
+.open .btns{ transform:rotate(135deg); -webkit-transform: rotate(135deg)}
+.dlr-row-tit{ width: 1180px; box-sizing: border-box; background-color: #065aa2; -webkit-box-sizing: border-box; border: 4px solid #b8cee0; height: 52px;
+line-height: 46px; padding: 0 15px; font-size: 16px; color: #b9d9f4}
+
+.dlr-row-tit .fr a{ display: block; float: left; font-size: 18px; color: #fff; margin-left: 20px; cursor: pointer}
+.dlr-row-tit .fr a img{ display: inline-block; position: relative; margin-right: 3px; top: -2px}
+.dlr-row-table{ padding-left: 57px; display: none}
+.open .dlr-row-table{ display: block}
+.mt4-table .title2{ background-color: #c1def8}
+.dlr-row{ margin-bottom: 34px;}
+
+.tc-box{ border-top-left-radius: 5px; border-top-right-radius: 5px}
+#layui-layer1{ border-radius: 5px; }
+#tcbox{ display: none}
+.tc-box-ul{ padding: 30px 15px;}
+.tc-box-ul li{ width:100%; height: 35px; margin-bottom: 15px; line-height: 35px; font-size: 16px; color: #364252}
+.tc-box-ul li span{ width: 70px; margin-right: 15px; text-align: right}
+.tc-box-ul li .input1{ width: 370px; padding: 0 5px}
+.tc-box-ul li .input2{ width: 178px;}
+.tc-box-ul li .input3{ width: 217px; padding: 0 5px}
+.tc-box-ul li .input4{ margin-left: 10px}
+.tc-box-ul .btn{ height: 48px; border-radius: 5px; border: 0; cursor: pointer; transition: 0.3s}
+.tc-box-ul .btn1{ width: 280px; background-color: #faa908; color: #fff;font-size: 16px}
+.tc-box-ul .btn2{ width: 172px; background-color: #d2d2d2; font-size: 16px; color: #065aa2; line-height: 48px; text-align: center; margin-right:15px}
+.tc-box-ul .btn1:hover{ background-color: #ee9e00}
+
+.yjmx-cx-top .input{ padding: 0 5px}
+.yjmx-cx-top{ margin-top: 25px}
+.yjmx-cx-top .input2{ width: 175px}
+.yjmx-cx-topR a{ background-color:transparent; font-size: 18px; color: #065aa2}
+.yjmx-cx-tab{ background-color: #fff; min-height: 400px}
+.yjmx-cx-text{ width: 100%; text-align: center; font-size: 16px; color: #8b8b8b; line-height: 80px}
+.cx-top2{ margin-top: 15px}
+.mt4-tit2{ border-top: 1px solid #bfbfbf}
+.page{line-height: 42px;}
+.page-content a{ width: 44px; height: 42px; line-height: 42px; border: 1px solid #dcdcdc; color: #333333; transition: 0.3s}
+.page-content a:hover,.page-content .active{ background-color: #065aa2; border: 1px solid #065aa2; color: #fff}
+.topage{  margin-right: 20px;}
+.topage input{ display:inline-block; border: 1px solid #dcdcdc; width: 77px; height: 40px; text-align: center}
+
+.cx-top .blue{ background-color: #065aa2}
+
+.mt4-table .l-text{ line-height: 18px;}
+
+.fydy-ul{ width: 440px; overflow: hidden; padding: 20px 0; padding-left: 1px}
+.fydy-ul li{ width: 220px; box-sizing: border-box;-webkit-box-sizing: border-box; height: 33px; line-height: 33px; padding: 0 15px; border: 1px solid #d1d6d9;
+float: left; margin-left: -1px; margin-top: -1px; text-align: left}
+.dyyjrow .input{ margin-left: 10px; width: 130px; padding: 0 4px;}
+.dyyjrow .btn{ width: 70px; height: 35px; line-height: 35px; text-align: center; background-color: #065aa2; color: #fff}
+.dyyjrow .btn1{ margin-left: 15px}
+.dyyjrow .btn1:hover{ background-color: #044b87}
+.dyyjrow .btn2{ margin-left: 3px; background-color: #faa908}
+.dyyjrow{ margin-bottom: 15px; overflow: hidden}
+
+#dyyjrow-b{ height: auto !important;}
+.cza-box a{ font-size: 16px; color: #065aa2; line-height: 24px; display: inline-block; padding: 0 5px}
+.cza-box{ padding: 20px 0; line-height: 24px; text-align: left}
+.newfyzul{ padding: 26px; font-size: 18px; line-height: 34px;}
+.newfyzul li{ height: 35px; margin-bottom: 15px; overflow: hidden; width: 100%; font-size: 16px; color: #364252}
+.newfyzul li span{ display: block; float:left; width: 64px; margin-right: 20px; text-align: right}
+.newfyzul li .input{ width: 367px}
+.newfyzul .btn{ width: 172px; height: 48px; border-radius: 3px; border: none; padding: 0; cursor: pointer; font-size: 16px;}
+.newfyzul .btn1{ background-color: #faa908; color: #fff}
+.newfyzul .btn2{ background-color: #d2d2d2; color: #065aa2; text-align: center; line-height: 48px;}
+.layui-layer .layui-layer-title{ background-color: #065aa2; color: #fff}
+.actionbtn{ font-size: 0; text-align: center;}
+.actionbtn .btn{ display: inline-block; width: 180px; height: 48px; text-align: center ;line-height: 48px; cursor: pointer; border-radius: 3px; margin: 0 10px; font-size: 16px;}
+.actionbtn .btn1{ background-color: #faa908; color: #fff}
+.actionbtn .btn2{ background-color: #d2d2d2; color: #064797}
+
+#newfyz{ display: none}
+.cx-top .t2{ padding-top: 20px;overflow: hidden; width: 100%}
+.mt4-table-mx .l-text{ width: 74px; padding: 22px 5px; text-align: center}
+.jiaoyimx-top{ overflow: hidden; height: auto; margin-top: 0}
+.jiaoyimx-top .input{ padding: 0 5px; width: 177px; margin-bottom: 12px}
+
+.mt4-table-yjjs .l-text{ width: 80px; padding: 10px 0; text-align: center; margin: auto}
+.zhlb-top >div{ width: 100%; overflow: hidden; margin-bottom: 20px;}
+.zhlb-top{ margin-top: 0; height: auto}
+.zhlb-top input{ width: 140px;}
+.zhlb-top-2 .input{ width: auto}
+.checkbox{ width: 10px; margin: auto; padding-left: 20px;}
+
+.set-top{ width: 100%; overflow: hidden}
+.set-top div{ width: 100%; overflow: hidden; margin-bottom: 13px;}
+.set-top div span{ display: block; float: left; width: 14%; font-size: 18px; color: #065aa2; line-height: 40px; text-align: center; font-weight: bold}
+.set-top div input{ width:86%; float: left; height: 40px; box-sizing: border-box; display: block; border: 2px solid  #b8cee0; padding: 0 5px;}
+.set-ul li{ width: 100%; height: 35px; margin-bottom: 16px;}
+.set-ul li input{ width: 468px; height: 35px; box-sizing: border-box; -webkit-box-sizing: border-box; border: 1px solid #d1d6d9; padding: 0 5px; margin-right: 20px;}
+.set-ul li .btn{ text-align: center; height: 35px; line-height: 35px; color: #fff; border-radius: 3px; width: 120px; cursor: pointer}
+.set-ul li .btn1{ background-color: #065aa2; margin-right: 16px;}
+.set-ul li .btn2{ background-color: #faa908}
+
+

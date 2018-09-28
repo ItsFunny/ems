@@ -1,0 +1,30 @@
+#parse("Main.vm")
+ <div class="container-fluid">
+        <div>
+            <h1 class="page-header">系管理</h1>
+        </div>
+        <div class="panel-heading">
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        系管理
+                    </div>
+                    <div class="panel-body">
+                        <div class="dataTable_wrapper">
+                           <form action="/admin/addDepart.do" method="post">
+                                <label>系名</label>
+                                <input class="form-control" name="deptName">
+                                <label></label>
+                                <button type="submit"
+                                        class="btn btn-primary form-control">添加
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+#parse("footer.vm")

@@ -1,0 +1,51 @@
+#parse("Main.vm")
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div>
+            <h1 class="page-header">添加课程</h1>
+        </div>
+        <div class="panel-heading">
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        课程信息
+                    </div>
+                    <!-- /.panel-heading -->
+                    <div class="panel-body">
+                        <div class="dataTable_wrapper">
+                            <form action="addCourse.do" method="get">
+                            	<input type="hidden" name="specId" value="${specId}">
+                                 <label>所属专业</label>
+                                <input type="text" class="form-control" value="${specName}" disabled="disabled">
+                                <label>课程名</label>
+                                <input class="form-control" name="courseName">
+                                <label>学分</label>
+                                <input type="text" class="form-control" name="credit">
+                                <label>课程类型</label>
+                                <select class="form-control" name="type">
+                                    <option>必修课/公共课</option>
+                                    <option>选修课/公共课</option>
+                                    <option>限选课/专业课</option>
+                                    <option>选修课/专业课</option>
+                                </select>
+                                <label></label>
+                                <button type="submit"
+                                        class="btn btn-primary form-control">添加
+                                </button>
+                            </form>
+                        </div>
+                        <!-- /.table-responsive -->
+                    </div>
+                    <!-- /.panel-body -->
+                </div>
+                <!-- /.panel -->
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+    </div>
+
+    <!-- /.container-fluid -->
+</div>
+#parse("footer.vm")

@@ -1,0 +1,16 @@
+#parse("Main.vm")
+<div class="w1237">
+    <div class="in-title">
+    </div>
+    <ul class="in-menu">
+    #foreach($speciality in $specialityLists)
+        <li class="in-menu1">
+            <a href="courseDeptSpec/showCourses?specId=${speciality.id}">
+                <p></p>
+                <div>${speciality.name}</div>
+            </a>
+        </li>
+    #end
+    </ul>
+</div>
+#parse("footer.vm")
